@@ -10,6 +10,7 @@ const Deck = function () {
             this.cards.push(new Card(rank, suit));
         }
     }
+    this.shuffle();
 }
 
 //Implementing the Durstenfeld Shuffle Algorithm
