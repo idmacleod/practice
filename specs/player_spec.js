@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Player = require('../src/player');
+const Player = require('../models/player');
 
 describe('Player', function () {
     let player1;
