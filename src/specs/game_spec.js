@@ -18,7 +18,7 @@ describe('Game', function () {
         assert.strictEqual(game1.player2, player2);
     });
 
-    it('starts with a deck of 52 cards', function () {
-        assert.strictEqual(game1.deck.cards.length, 52);
+    it('starts with a deck of 52 cards, dealing 2 immediately', function () {
+        assert.strictEqual(game1.deck.cards.length, 50);
     });
 });

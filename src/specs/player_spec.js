@@ -9,8 +9,8 @@ describe('Player', function () {
 
     beforeEach(function () {
         player1 = new Player('Iain');
-        card1 = new Card('jack', 'clubs');
-        card2 = new Card('three', 'diamonds');
+        card1 = new Card('Jack', 'Clubs');
+        card2 = new Card('Three', 'Diamonds');
     });
 
     it('should have a name', function () {

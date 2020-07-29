@@ -1,9 +1,9 @@
 const Card = require('./card');
 
 const Deck = function () {
-    const suits = ['spades', 'hearts', 'diamonds', 'clubs'];
-    const ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven',
-                   'eight', 'nine', 'ten', 'jack', 'queen', 'king'];
+    const suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
+    const ranks = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven',
+                   'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King'];
     this.cards = [];
     for (suit of suits) {
         for (rank of ranks) {

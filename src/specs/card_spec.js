@@ -7,17 +7,17 @@ describe('Card', function () {
     let card3;
 
     beforeEach(function () {
-        card1 = new Card('ten', 'diamonds');
-        card2 = new Card('queen', 'hearts');
-        card3 = new Card('ace', 'spades');
+        card1 = new Card('Ten', 'Diamonds');
+        card2 = new Card('Queen', 'Hearts');
+        card3 = new Card('Ace', 'Spades');
     });
 
     it('should have a rank', function () {
-        assert.strictEqual(card1.rank, 'ten');
+        assert.strictEqual(card1.rank, 'Ten');
     });
 
     it('should have a suit', function () {
-        assert.strictEqual(card1.suit, 'diamonds');
+        assert.strictEqual(card1.suit, 'Diamonds');
     });
 
     it('should have a value if pip card', function () {
@@ -31,4 +31,8 @@ describe('Card', function () {
     it('should have a value if aces high', function () {
         assert.strictEqual(card3.getValue(), 11);
     });
+
+    it('can display its name', function () {
+        assert.strictEqual(card3.displayName(), 'Ace of Spades')
+    })
 });
