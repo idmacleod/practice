@@ -22,4 +22,11 @@ Deck.prototype.shuffle = function () {
     }
 }
 
+Deck.prototype.dealCardTo = function (player) {
+    if (this.cards.length > 0) {
+        const card = this.cards.pop();
+        player.pickUp(card);
+    }
+}
+
 module.exports = Deck;
