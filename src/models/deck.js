@@ -1,12 +1,12 @@
-const Card = require('./card');
+import Card from './card';
 
 const Deck = function () {
     const suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
     const ranks = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven',
                    'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King'];
     this.cards = [];
-    for (suit of suits) {
-        for (rank of ranks) {
+    for (const suit of suits) {
+        for (const rank of ranks) {
             this.cards.push(new Card(rank, suit));
         }
     }
