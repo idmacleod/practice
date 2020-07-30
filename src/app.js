@@ -1,5 +1,5 @@
-const Game = require('./models/game');
-const Player = require('./models/player');
+import Game from './models/game';
+import Player from './models/player';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
