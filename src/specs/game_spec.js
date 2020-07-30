@@ -1,6 +1,6 @@
 const assert = require('assert');
 import Game from '../models/game';
-const Player = require('../models/player');
+import Player from '../models/player';
 
 describe('Game', function () {
     let game1;

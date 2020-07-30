@@ -1,14 +1,16 @@
-const Player = function (name) {
-    this.name = name;
-    this.hand = [];
+class Player {
+    constructor(name) {
+        this.name = name;
+        this.hand = [];
+    }
+
+    pickUp(card) {
+        this.hand.push(card);
+    }
+
+    valueHand() {
+        return this.hand.reduce((acc, card) => acc + card.getValue(), 0);
+    }
 }
 
-Player.prototype.pickUp = function (card) {
-    this.hand.push(card);
-}
-
-Player.prototype.valueHand = function () {
-    return this.hand.reduce((acc, card) => acc + card.getValue(), 0);
-}
-
-module.exports = Player;
+export default Player;
