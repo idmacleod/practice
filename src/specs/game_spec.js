@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Game = require('../models/game');
+import Game from '../models/game';
 const Player = require('../models/player');
 
 describe('Game', function () {
